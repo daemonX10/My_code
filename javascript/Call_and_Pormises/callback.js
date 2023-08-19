@@ -12,3 +12,18 @@ function operation(num,fun){
 operation(3,squareOfANumber);
 
 // Synchronous Operations
+
+console.log("start");
+
+function function1(){
+    console.log("Execution function 01");
+}
+
+function function2(callback){
+    console.log("execution function 02");
+}
+
+function2(function1);
+console.log("end");
+
+log
