@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <!-- Js starts -->
+    <script>
+        let newPromise = new Promise ((resolve, reject)=>{
+            let randomNumber=Math.random();
+            console.log(randomNumber);
+            if(randomNumber>0.5){
+                resolve("this promise is resolved . The number is greater than 0.5");
+            }
+            else{
+                reject("The promise is rejected . The number is lesser than 0.5");
+            }
+        });
+        newPromise.then((result)=>console.log(result));
+    </script>
+</body>
+</html>
