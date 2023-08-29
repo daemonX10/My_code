@@ -18,7 +18,10 @@
                 reject("The promise is rejected . The number is lesser than 0.5");
             }
         });
-        newPromise.then((result)=>console.log(result));
+        newPromise
+        .then((result)=>console.log(result))
+        .catch((error)=> console.log(error))
+        .finally(()=>console.log("this promise is settled"));
     </script>
 </body>
 </html>
