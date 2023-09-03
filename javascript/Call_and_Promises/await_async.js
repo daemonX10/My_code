@@ -1,4 +1,4 @@
-function returnDummyPromise(){
+/* function returnDummyPromise(){
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
             console.log("start of promise");
@@ -29,4 +29,10 @@ async function consumePromise(){
 
 consumePromise();
 
-console.log("end of file");
+console.log("end of file"); */
+
+async function printResult(){
+    return "Hello World";
+}
+
+printResult();
