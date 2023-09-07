@@ -76,7 +76,8 @@ button {
         const displayValue = document.getElementById("displayValue");
 
         // for decrement button click
-        decrementBtn.addEventListener("click", () => {
+        
+        decrementBtn.addEventListener("keypress", () => {
             const value = Number(displayValue.innerText);
             if (value > 0) {
                 displayValue.innerText = value - 1;
@@ -86,7 +87,7 @@ button {
         });
 
         // for increment button click
-        incrementBtn.addEventListener("click", () => {
+        incrementBtn.addEventListener("mouseout", () => {
             const value = Number(displayValue.innerText);
             if (value >= 10) {
                 alert("10+ values are not allowed");
@@ -96,7 +97,7 @@ button {
         });
 
         // for reset button click
-        resetBtn.addEventListener("click", () => {
+        resetBtn.addEventListener("mouseover", () => {
             displayValue.innerText = 0;
         });
 </script>
