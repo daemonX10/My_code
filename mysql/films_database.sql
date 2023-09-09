@@ -20,3 +20,8 @@ VALUES
 (4,"Iron man ");
 
 SELECT * FROM movies;
+DELETE FROM movies WHERE rating<=3;
+
+DELETE FROM movies WHERE rating=4;
+
+drop DATABASE if EXISTS films_database;
