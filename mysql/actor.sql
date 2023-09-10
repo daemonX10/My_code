@@ -55,3 +55,18 @@ USE lco_films;
 DESCRIBE actor;
 DESCRIBE address;
 DESCRIBE category;
+
+SELECT * FROM actor ORDER BY NetWorth;
+SELECT * FROM actor ORDER BY NetWorth DESC;
+SELECT * FROM actor WHERE firstName LIKE "ch%" ORDER BY firstName;
+
+SELECT * FROM actor WHERE firstName like "ch%" ORDER BY firstName , NetWorth DESC ;
+
+-- order by
+
+SELECT * FROM  actor  LIMIT 3 OFFSET 6;
+
+SELECT firstName , LastName FROM actor LIMIT 3 OFFSET 6;
+SELECT firstName as Firsts ,LastName as lasts FROM actor;
+
+SELECT * FROM actor;
