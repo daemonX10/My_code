@@ -21,8 +21,8 @@ VALUES
 SELECT * FROM actor;
 
 INSERT INTO actor VALUES
-("scarlett","johnson","female"),
-("chris","Hemsworth","male");
+("scarlett","johnson","female",200),
+("chris","Hemsworth","male",300);
 
 ALTER TABLE actor
 ADD  NetWorth INT NOT NULL;
@@ -40,3 +40,18 @@ INSERT INTO actor VALUES
 
 SELECT * FROM actor where NetWorth>=500;
 SELECT * FROM actor WHERE NetWorth>=500 OR NetWorth<200;
+
+DESC actor;
+
+SELECT * FROM actor where firstName="scarlett";
+SELECT * FROM actor WHERE firstName LIKE "ch%";
+SELECT * FROM actor WHERE LastName LIKE "%n";
+
+SELECT * FROM actor WHERE LastName like "%o%";
+
+SHOW DATABASES;
+USE lco_films;
+
+DESCRIBE actor;
+DESCRIBE address;
+DESCRIBE category;
