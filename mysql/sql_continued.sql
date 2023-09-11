@@ -24,3 +24,6 @@ SELECT * FROM film WHERE rental_duration=7;
 SELECT AVG(rental_duration) FROM film;
 SELECT MIN(rental_duration) FROM film;
 SELECT SUM(rental_duration) FROM film;
+SELECT address,district FROM address ;
+SELECT district , COUNT(*) AS no_of_address FROM address GROUP BY district ORDER BY COUNT(*) desc;
+SELECT address,district FROM address GROUP BY address_id;
