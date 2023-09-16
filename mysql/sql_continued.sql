@@ -27,3 +27,6 @@ SELECT SUM(rental_duration) FROM film;
 SELECT address,district FROM address ;
 SELECT district , COUNT(*) AS no_of_address FROM address GROUP BY district ORDER BY COUNT(*) desc;
 SELECT address,district FROM address GROUP BY address_id;
+
+-- HAVING
+SELECT district , COUNT(*) FROM address GROUP BY district HAVING district ='buenos aires' or district='shandong' ORDER BY COUNT(*) ASC;
