@@ -2,3 +2,5 @@
 show DATABASES;
 
 SELECT address , city from address join city on address.city_id=city.city_id;
+
+SHOW DATABASES;
