@@ -55,4 +55,12 @@ db.course.insertMany([{
 
 db.course.find();
 
+db.course.find({type:'practical'});
 
+db.course.find({mandatory:"no"});
+
+db.course.find({mandatory:"NO"});
+
+db.course.find({type:"practical",name:"Physics"});
+
+db.course.find({_id: ObjectId('650c6d8b15d562a65b90fb5d')}); // find using id
