@@ -33,12 +33,30 @@ let itemsInCart =["apple","comb","mike","keyboard","t-shirt","mobile holder"];
 // map is used to create a new array from an existing array
 // map is used to modify the existing array
 
-const array = [1,2,3,4,5];
+// const array = [1,2,3,4,5];
 
 // array.map((element,index,arr)=>{
 //     console.log(element,index,arr);
 // })
 
-array.map((el)=>{
-    console.log(el);
-})
+// array.map((h)=>console.log(h));
+
+const cartBill = [10,20,30,40,50];
+
+const sumOfCart = cartBill.reduce((pre,curr)=>{
+    console.log(`pre is ${pre} and curr is ${curr}`);
+    return pre+curr;
+},0) ;
+console.log(sumOfCart);
+
+const Check = cartBill.every((v) => typeof v === "number");
+
+console.log("Check is ",Check);
+
+const above20 = cartBill.find((v)=>v>20);
+console.log(above20);
+
+const above20Index = cartBill.findIndex((v)=>v>20);
+console.log(above20Index);
+
+console.log(...(cartBill.keys()));
